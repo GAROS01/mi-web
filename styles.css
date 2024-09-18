@@ -1,0 +1,206 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+header .logo {
+    font-size: 24px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a,
+header .cta {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+header .cta {
+    background: #ff5733;
+}
+
+/* Sección Principal */
+.hero {
+    position: relative;
+    background: url('https://wallpapers.com/images/featured/viajar-ibk7fgrvtvhs7qzg.jpg') no-repeat center center/cover;
+    height: 90vh;
+    color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    /* Capa semitransparente */
+    z-index: 1;
+    pointer-events: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    /* Colocar el contenido encima del overlay */
+}
+
+.hero-content h1 {
+    font-size: 3em;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.hero-form input,
+.hero-form button {
+    padding: 20px;
+    margin: 10px;
+    margin-top: 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+}
+
+.hero-form button {
+    background: #ff5733;
+    color: white;
+}
+
+/* Destinos */
+.destinos {
+    padding: 40px;
+    text-align: center;
+}
+
+.destinos h2 {
+    margin-bottom: 20px;
+}
+
+.destinos .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.destinos .destino img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.destinos .destino h3 {
+    margin: 10px 0;
+}
+
+/* Ofertas y Paquetes */
+.paquetes {
+    padding: 40px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.paquete h3 {
+    font-size: 24px;
+}
+
+.paquete button {
+    padding: 10px 20px;
+    background: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Testimonios */
+.testimonios {
+    padding: 40px;
+    text-align: center;
+}
+
+.testimonios .testimonio {
+    margin: 20px 0;
+}
+
+/* Suscripción */
+.suscripcion {
+    padding: 40px;
+    background: #333;
+    color: white;
+    text-align: center;
+}
+
+.suscripcion input {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.suscripcion button {
+    padding: 10px 20px;
+    background: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Pie de Página */
+footer {
+    padding: 20px;
+    background: #222;
+    color: white;
+    text-align: center;
+}
+
+footer .social a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}

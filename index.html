@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descubre América</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <header>
+      <div class="logo">DescubreAmérica</div>
+      <nav>
+        <ul>
+          <li><a href="#">Destinos</a></li>
+          <li><a href="#">Paquetes</a></li>
+          <li><a href="#">Reservas</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#" class="cta">Reserva tu viaje</a></li>
+          <!-- Mover botón aquí -->
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Sección Principal -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Descubre América: ¡Tu Próxima Aventura Te Espera!</h1>
+        <p>
+          Explora los destinos más sorprendentes del continente con nuestras
+          ofertas exclusivas.
+        </p>
+        <form class="hero-form" id="searchForm">
+          <input type="text" id="destination" placeholder="Destino" required />
+          <input type="date" id="date" placeholder="Fecha" required />
+          <input
+            type="number"
+            id="people"
+            placeholder="Número de personas"
+            required
+          />
+          <button type="submit">Buscar tu aventura</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Destinos Destacados -->
+    <section class="destinos">
+      <h2>Destinos Imperdibles en América</h2>
+      <div class="grid">
+        <div class="destino">
+          <img
+            src="https://nyc.eu/wp-content/uploads/2015/07/New_York_City-scaled.jpg"
+            alt="Nueva York"
+          />
+          <h3>Nueva York</h3>
+          <p>La ciudad que nunca duerme.</p>
+        </div>
+        <div class="destino">
+          <img
+            src="https://media.licdn.com/dms/image/v2/D4D12AQE-mF1ayHdhfw/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1690450951636?e=1730332800&v=beta&t=7_8CzT5d4Z0sPJbbnLVVTUxXC7toOPNu3EnY4_4F9UE"
+            alt="Río de Janeiro"
+          />
+          <h3>Río de Janeiro</h3>
+          <p>Vive el Carnaval más famoso del mundo.</p>
+        </div>
+        <div class="destino">
+          <img
+            src="https://blog.vivaaerobus.com/wp-content/uploads/2019/12/Mejores-Playas-de-Canc%C3%BAn.jpg"
+            alt="Cancún"
+          />
+          <h3>Cancún</h3>
+          <p>Playas de ensueño y cultura Maya.</p>
+        </div>
+        <div class="destino">
+          <img
+            src="https://viajes.nationalgeographic.com.es/medio/2018/03/01/machu-picchu_5ff969ae_1280x720.jpg
+          "
+            alt="Machu Picchu"
+          />
+          <h3>Machu Picchu</h3>
+          <p>Descubre la magia de los Andes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ofertas y Paquetes -->
+    <section class="paquetes">
+      <h2>Paquetes Exclusivos para Cada Aventurero</h2>
+      <div class="paquete">
+        <h3>Tour por los Andes</h3>
+        <p>Explora la majestuosidad de la cordillera más larga del mundo.</p>
+        <button>Reservar Ahora</button>
+      </div>
+      <!-- Agregar más paquetes según sea necesario -->
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonios">
+      <h2>Experiencias de Viajeros</h2>
+      <div class="testimonio">
+        <p>
+          "¡Fue la mejor experiencia de mi vida! Todo estuvo perfectamente
+          organizado."
+        </p>
+        <h4>- Juan Pérez</h4>
+      </div>
+      <!-- Agregar más testimonios según sea necesario -->
+    </section>
+
+    <!-- Suscripción -->
+    <section class="suscripcion">
+      <h2>Suscríbete para recibir nuestras ofertas</h2>
+      <form>
+        <input type="email" placeholder="Ingresa tu correo" />
+        <button type="submit">Suscribirme</button>
+      </form>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+      <p>&copy; 2024 DescubreAmérica. Todos los derechos reservados.</p>
+      <div class="social">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
